@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">ViewPagerTabFragmentGestionBoilerplate</string>
     <string name="title_home">Home</string>
-    <string name="title_fragment1">Fragment1</string>
     <string name="title_notifications">Notifications</string>
+    <string name="title_fragment2">Fragment2</string>
+    <string name="title_fragment1">Fragment1</string>
 </resources>

@@ -12,10 +12,16 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_fragment1"
         android:name="dev.ronronea.viewpagertabfragmentgestionboilerplate.ui.fragment1.Fragment1"
         android:label="@string/title_fragment1"
         tools:layout="@layout/fragment_1" />
+
+    <fragment
+        android:id="@+id/navigation_fragment2"
+        android:name="dev.ronronea.viewpagertabfragmentgestionboilerplate.ui.fragment2.Fragment2"
+        android:label="@string/title_fragment1"
+        tools:layout="@layout/fragment_2" />
 
     <fragment
         android:id="@+id/navigation_notifications"
