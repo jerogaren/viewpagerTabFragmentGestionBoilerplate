@@ -1,4 +1,4 @@
-package dev.ronronea.viewpagertabfragmentgestionboilerplate.ui.dashboard
+package dev.ronronea.viewpagertabfragmentgestionboilerplate.ui.fragment1
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import dev.ronronea.viewpagertabfragmentgestionboilerplate.databinding.FragmentDashboardBinding
+import dev.ronronea.viewpagertabfragmentgestionboilerplate.databinding.Fragment1Binding
 
-class DashboardFragment : Fragment() {
+class Fragment1 : Fragment() {
 
-    private var _binding: FragmentDashboardBinding? = null
+    private var _binding: Fragment1Binding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -23,12 +23,12 @@ class DashboardFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val dashboardViewModel =
-            ViewModelProvider(this).get(DashboardViewModel::class.java)
+            ViewModelProvider(this).get(Fragment1ViewModel::class.java)
 
-        _binding = FragmentDashboardBinding.inflate(inflater, container, false)
+        _binding = Fragment1Binding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textDashboard
+        val textView: TextView = binding.text
         dashboardViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
